@@ -42,7 +42,14 @@
     ]
 
     // Add your code here
-
+    for(let i=0;i<phonebook.length;i++){
+      currentName=phonebook[i].name;
+      let text=document.createElement("div");
+      if(currentName==name){
+        text.innerHTML=currentName;
+      }
+      para.appendChild(text);
+    }
     // Don't edit the code below here!
     let section = document.querySelector('section');
     section.appendChild(para);

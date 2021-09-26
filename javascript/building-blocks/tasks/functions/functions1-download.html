@@ -30,7 +30,8 @@
     let para = document.createElement('p');
 
     // Add your code here
-
+    const randname=document.createTextNode(names[Math.floor(names.length*Math.random())]);
+    para.appendChild(randname);
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
